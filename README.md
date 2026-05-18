@@ -1,3 +1,5 @@
+<div align="center">THIS IS A WORK IN PROGRESS, EXPECT REGULAR UPDATES </div>
+
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode" width="100">
