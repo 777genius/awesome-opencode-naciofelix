@@ -1,26 +1,33 @@
 <div align="center">
 
-<br>
-
-<img src="https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode Logo" width="120">
+<img src="https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode" width="100">
 
 <br>
 <br>
 
 # Awesome OpenCode
 
-> A curated collection of plugins, projects, integrations, providers, MCP servers, skills, and resources for [OpenCode](https://opencode.ai) — the open source AI coding agent.
+**The definitive curated collection of everything OpenCode.**
+
+Plugins · Projects · Integrations · Providers · MCP Servers · Skills · Resources
 
 <br>
 
-[![GitHub Stars](https://img.shields.io/github/stars/anomalyco/opencode?style=for-the-badge&logo=github&logoColor=white&label=OpenCode&color=1a1a2e)](https://github.com/anomalyco/opencode)
-[![Discord](https://img.shields.io/discord/1391832426048651334?style=for-the-badge&logo=discord&logoColor=white&color=5865F2)](https://opencode.ai/discord)
-[![License](https://img.shields.io/badge/license-CC0--1.0-blue?style=for-the-badge)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
+[![GitHub Stars](https://img.shields.io/github/stars/anomalyco/opencode?style=flat-square&logo=github&logoColor=white&label=OpenCode&color=181717)](https://github.com/anomalyco/opencode)
+[![Discord](https://img.shields.io/discord/1391832426048651334?style=flat-square&logo=discord&logoColor=white&color=5865F2&label=Discord)](https://opencode.ai/discord)
+[![License](https://img.shields.io/badge/CC0--1.0-blue?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
 <br>
 
-**160K+ GitHub Stars** · **900+ Contributors** · **7.5M+ Monthly Developers** · **75+ LLM Providers**
+<table>
+<tr>
+<td align="center"><strong>160K+</strong><br><sub>GitHub Stars</sub></td>
+<td align="center"><strong>900+</strong><br><sub>Contributors</sub></td>
+<td align="center"><strong>7.5M+</strong><br><sub>Monthly Devs</sub></td>
+<td align="center"><strong>75+</strong><br><sub>LLM Providers</sub></td>
+</tr>
+</table>
 
 <br>
 
@@ -28,38 +35,40 @@
 
 ---
 
-## Table of Contents
+## Contents
 
-- [Quick Start](#-quick-start)
-- [Features at a Glance](#-features-at-a-glance)
-- [Plugins](#-plugins)
-- [Projects & Integrations](#-projects--integrations)
-- [Agent Collections](#-agent-collections)
-- [LLM Providers](#-llm-providers)
-- [MCP Servers](#-mcp-servers)
-- [Agent Skills](#-agent-skills)
-- [Themes & UI](#-themes--ui)
-- [Editor Integrations](#-editor-integrations)
+- [Quick Start](#quick-start)
+- [Features at a Glance](#features-at-a-glance)
+- [Plugins](#plugins)
+- [Projects & Integrations](#projects--integrations)
+- [Agent Collections](#agent-collections)
+- [LLM Providers](#llm-providers)
+- [MCP Servers](#mcp-servers)
+- [Agent Skills](#agent-skills)
+- [Themes & UI](#themes--ui)
+- [Editor Integrations](#editor-integrations)
 - [SDK & Development](#sdk--development)
-- [Guides & Tutorials](#-guides--tutorials)
-- [Community & Resources](#-community--resources)
-- [Contributing](#-contributing)
+- [Guides & Tutorials](#guides--tutorials)
+- [Community & Resources](#community--resources)
+- [Contributing](#contributing)
 
 ---
 
 ## Quick Start
 
 ```bash
-# Install OpenCode
 curl -fsSL https://opencode.ai/install | bash
-
-# Or use your preferred package manager
-npm i -g opencode-ai@latest          # npm / bun / pnpm / yarn
-brew install anomalyco/tap/opencode   # macOS & Linux (recommended)
-scoop install opencode                # Windows
-sudo pacman -S opencode               # Arch Linux
-mise use -g opencode                  # Any OS
 ```
+
+Or use your preferred package manager:
+
+| Manager | Command |
+|:---|:---|
+| **npm** | `npm i -g opencode-ai@latest` |
+| **Homebrew** | `brew install anomalyco/tap/opencode` |
+| **Scoop** | `scoop install opencode` |
+| **Arch** | `sudo pacman -S opencode` |
+| **mise** | `mise use -g opencode` |
 
 OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/download)** for macOS, Windows, and Linux.
 
@@ -67,18 +76,18 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 
 ## Features at a Glance
 
-| Feature | Description |
-|:---|:---|
-| **LSP Enabled** | Automatically loads the right LSPs for the LLM |
-| **Multi-Session** | Start multiple agents in parallel on the same project |
-| **Share Links** | Share a link to any session for reference or debugging |
-| **GitHub Copilot** | Log in with GitHub to use your Copilot account |
-| **ChatGPT Plus/Pro** | Log in with OpenAI to use your ChatGPT subscription |
-| **Any Model** | 75+ LLM providers through Models.dev, including local models |
-| **Any Editor** | Terminal interface, desktop app, and IDE extension |
-| **Agent Skills** | Reusable, loadable SKILL.md definitions for specialized behavior |
-| **MCP Servers** | Connect external tools via Model Context Protocol |
-| **Privacy First** | No code or context data stored — works in sensitive environments |
+| | Feature | Description |
+|:---|:---|:---|
+| ⚡ | **LSP Enabled** | Automatically loads the right LSPs for the LLM |
+| 🔄 | **Multi-Session** | Start multiple agents in parallel on the same project |
+| 🔗 | **Share Links** | Share a link to any session for reference or debugging |
+| 🐙 | **GitHub Copilot** | Log in with GitHub to use your Copilot account |
+| 🤖 | **ChatGPT Plus/Pro** | Log in with OpenAI to use your ChatGPT subscription |
+| 🧠 | **Any Model** | 75+ LLM providers through Models.dev, including local models |
+| 🖥️ | **Any Editor** | Terminal interface, desktop app, and IDE extension |
+| 🛠️ | **Agent Skills** | Reusable, loadable SKILL.md definitions for specialized behavior |
+| 🔌 | **MCP Servers** | Connect external tools via Model Context Protocol |
+| 🔒 | **Privacy First** | No code or context data stored — works in sensitive environments |
 
 ---
 
@@ -86,7 +95,9 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 
 > Extend OpenCode with community-built plugins. Add them to your `opencode.json` under the `"plugin"` key.
 
-### Authentication & Access
+<details>
+<summary><strong>Authentication & Access</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -95,7 +106,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [opencode-antigravity-auth](https://github.com/NoeFabris/opencode-antigravity-auth) | Use Antigravity's free models instead of API billing |
 | [opencode-google-antigravity-auth](https://github.com/shekohex/opencode-google-antigravity-auth) | Google Antigravity OAuth with search and robust API handling |
 
-### Developer Experience
+</details>
+
+<details>
+<summary><strong>Developer Experience</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -106,7 +121,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [opencode-wakatime](https://github.com/angristan/opencode-wakatime) | Track OpenCode usage with WakaTime |
 | [opencode-sentry-monitor](https://github.com/stolinski/opencode-sentry-monitor) | Trace and debug AI agents with Sentry AI Monitoring |
 
-### Code Intelligence
+</details>
+
+<details>
+<summary><strong>Code Intelligence</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -116,7 +135,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [opencode-morph-plugin](https://github.com/morphllm/opencode-morph-plugin) | Fast Apply, WarpGrep codebase search, and context compaction |
 | [oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Background agents, pre-built LSP/AST/MCP tools, curated agents |
 
-### Context & Memory
+</details>
+
+<details>
+<summary><strong>Context & Memory</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -125,7 +148,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [opencode-supermemory](https://github.com/supermemoryai/opencode-supermemory) | Persistent memory across sessions using Supermemory |
 | [opencode-skillful](https://github.com/zenobi-us/opencode-skillful) | Lazy load prompts on demand with skill discovery and injection |
 
-### Workflow & Automation
+</details>
+
+<details>
+<summary><strong>Workflow & Automation</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -140,7 +167,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [opencode-worktree](https://github.com/kdcokenny/opencode-worktree) | Zero-friction git worktrees for OpenCode |
 | [opencode-scheduler](https://github.com/different-ai/opencode-scheduler) | Schedule recurring jobs with cron syntax |
 
-### Orchestration & Planning
+</details>
+
+<details>
+<summary><strong>Orchestration & Planning</strong></summary>
+<br>
 
 | Plugin | Description |
 |:---|:---|
@@ -152,6 +183,8 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [micode](https://github.com/vtemian/micode) | Structured Brainstorm → Plan → Implement workflow |
 | [octto](https://github.com/vtemian/octto) | Interactive browser UI for AI brainstorming |
 | [ocx](https://github.com/kdcokenny/ocx) | OpenCode extension manager with portable, isolated profiles |
+
+</details>
 
 ---
 
@@ -185,9 +218,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 
 ## LLM Providers
 
-> OpenCode supports **75+ LLM providers** via [Models.dev](https://models.dev). Here are the most popular:
+> OpenCode supports **75+ LLM providers** via [Models.dev](https://models.dev).
 
-### Cloud Providers
+<details>
+<summary><strong>Cloud Providers</strong></summary>
+<br>
 
 | Provider | Highlights |
 |:---|:---|
@@ -200,7 +235,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [xAI](https://opencode.ai/docs/providers/#xai) | Grok models |
 | [DeepSeek](https://opencode.ai/docs/providers/#deepseek) | DeepSeek V4 Pro |
 
-### Aggregators & Gateways
+</details>
+
+<details>
+<summary><strong>Aggregators & Gateways</strong></summary>
+<br>
 
 | Provider | Highlights |
 |:---|:---|
@@ -210,7 +249,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [Helicone](https://opencode.ai/docs/providers/#helicone) | LLM observability + gateway |
 | [Cloudflare AI Gateway](https://opencode.ai/docs/providers/#cloudflare-ai-gateway) | Unified endpoint, no separate API keys |
 
-### Fast Inference
+</details>
+
+<details>
+<summary><strong>Fast Inference</strong></summary>
+<br>
 
 | Provider | Highlights |
 |:---|:---|
@@ -219,7 +262,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [Fireworks AI](https://opencode.ai/docs/providers/#fireworks-ai) | Fast open model inference |
 | [Together AI](https://opencode.ai/docs/providers/#together-ai) | Open model hosting |
 
-### Local & Self-Hosted
+</details>
+
+<details>
+<summary><strong>Local & Self-Hosted</strong></summary>
+<br>
 
 | Provider | Highlights |
 |:---|:---|
@@ -228,8 +275,11 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 | [llama.cpp](https://opencode.ai/docs/providers/#llamacpp) | Direct llama-server integration |
 | [Hugging Face](https://opencode.ai/docs/providers/#hugging-face) | 17+ inference providers |
 
+</details>
+
 <details>
 <summary><strong>View all 75+ providers</strong></summary>
+<br>
 
 302.AI · Amazon Bedrock · Anthropic · Atomic Chat · Azure OpenAI · Azure Cognitive Services · Baseten · Cerebras · Cloudflare AI Gateway · Cloudflare Workers AI · Cortecs · DeepSeek · Deep Infra · DigitalOcean · FrogBot · Fireworks AI · GitLab Duo · GitHub Copilot · Google Vertex AI · Groq · Hugging Face · Helicone · llama.cpp · IO.NET · LM Studio · Moonshot AI · MiniMax · NVIDIA · Nebius Token Factory · Ollama · Ollama Cloud · OpenAI · OpenCode Zen · OpenRouter · LLM Gateway · SAP AI Core · STACKIT · OVHcloud AI Endpoints · Scaleway · Together AI · Venice AI · Vercel AI Gateway · xAI · Z.AI · ZenMux
 
@@ -241,18 +291,15 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 
 > Connect external tools to OpenCode via the [Model Context Protocol](https://opencode.ai/docs/mcp-servers/).
 
-### Popular MCP Servers
-
 | Server | Description | Type |
 |:---|:---|:---|
 | [Sentry](https://mcp.sentry.dev) | Query Sentry issues, projects, and errors | Remote (OAuth) |
 | [Context7](https://github.com/upstash/context7) | Search through documentation | Remote |
 | [Grep by Vercel](https://grep.app) | Search code snippets on GitHub | Remote |
 
-### Adding an MCP Server
+**Adding an MCP Server:**
 
 ```jsonc
-// opencode.json
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
@@ -275,6 +322,7 @@ OpenCode is also available as a **[Desktop App (Beta)](https://opencode.ai/downl
 > Reusable behavior definitions loaded on-demand via `SKILL.md` files. [Learn more](https://opencode.ai/docs/skills/).
 
 Skills can be placed in:
+
 - `.opencode/skills/<name>/SKILL.md` — project-level
 - `~/.config/opencode/skills/<name>/SKILL.md` — global
 - `.claude/skills/<name>/SKILL.md` — Claude-compatible
@@ -400,10 +448,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 <div align="center">
 
-<br>
-
-**[OpenCode](https://opencode.ai)** · Built by [Anomaly](https://anoma.ly) · MIT License
-
-<br>
+**[OpenCode](https://opencode.ai)** · Built by [Anomaly](https://anoma.ly)
 
 </div>
